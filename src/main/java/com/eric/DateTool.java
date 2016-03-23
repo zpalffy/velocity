@@ -11,7 +11,7 @@ public class DateTool {
 
 	private Date date;
 
-	private String format = "EEE, dd MMM yyyy HH:mm:ss zzz";
+	private String format = "EEE, dd MMM yyyy HH:mm:ss Z";
 
 	private TimeZone zone = TimeZone.getDefault();
 
@@ -39,7 +39,7 @@ public class DateTool {
 	}
 
 	public DateTool getFormatRfc822() {
-		return pattern("EEE, dd MMM yyyy HH:mm:ss zzz");
+		return pattern("EEE, dd MMM yyyy HH:mm:ss Z");
 	}
 
 	public DateTool getFormatShortDate() {

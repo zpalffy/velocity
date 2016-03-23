@@ -53,6 +53,7 @@ public class VelocityTransform extends Command {
 		context.put("date", new DateTool());
 		context.put("collection", new CollectionTool());
 		context.put("escape", new StringEscapeUtils());
+		context.put("url", new UrlTool());
 
 		Gson gson = new Gson();
 		context.put(sysInName, gson.fromJson(systemIn(), Object.class));

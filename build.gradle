@@ -5,12 +5,13 @@ apply plugin: 'application'
 mainClassName = "com.eric.VelocityTransform"
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
 // In this section you declare the dependencies for your production and test code
 dependencies {
-    compile 'com.beust:jcommander:1.48'
+    compile 'com.eric:cli:+'
     compile 'org.apache.velocity:velocity:1.7'
     compile 'com.google.code.gson:gson:2.3.1'
     compile 'com.google.guava:guava:19.0'
