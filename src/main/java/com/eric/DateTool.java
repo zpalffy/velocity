@@ -86,6 +86,12 @@ public class DateTool {
 		return copy;
 	}
 
+	public int getYear() {
+		Calendar c = Calendar.getInstance(zone);
+		c.setTime(date);
+		return c.get(Calendar.YEAR);
+	}
+
 	public String getAllTimeZones() {
 		return ArrayUtils.toString(TimeZone.getAvailableIDs());
 	}
